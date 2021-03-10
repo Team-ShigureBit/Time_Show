@@ -47,7 +47,7 @@ if (nowTime.getDay() == 6)
 {
 nowDay = "土";
 } else {
-nowDay = "火";
+nowDay = "日";
 } 
 
    var msg1 = nowYear + "年" + nowMonth + "月" + nowDate + "日" + nowDay + "曜日";
