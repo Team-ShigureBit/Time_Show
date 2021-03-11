@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>時刻</h1>
+  <h1>時刻(JST)</h1>
+
+<a onclick="setJa()">Ja</a>/<a onclick="setEn()">En</a>
 
 <p id="YMDD">Now Loading...</p>
 <p id="HMS"></p>
 
-  <script src="script.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="test.js"></script>
 </body>
 </html>
