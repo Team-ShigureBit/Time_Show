@@ -16,9 +16,9 @@ function showClock() {
 
 var nowYear = nowTime.getFullYear();
 
-var nowMonth = nowTime.getMonth() + 1;
+var nowMonth = set2fig( nowTime.getMonth() + 1 );
 
-var nowDate = nowTime.getDate();
+var nowDate = set2fig( nowTime.getDate() );
 
 /*曜日の取得*/
 var nowDay = nowTime.getDay();
