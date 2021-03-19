@@ -22,3 +22,11 @@ function storageAvailable(type) {
             (storage && storage.length !== 0);
     }
 }
+
+function WebStorageTest() {
+    if (storageAvailable('localStorage')) {
+        console.log('WebStorage API is OK.');
+    } else {
+        console.warn("WebStorage API can't Use. ")
+    }
+}
