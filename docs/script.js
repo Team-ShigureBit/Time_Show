@@ -46,7 +46,7 @@ function showClock() {
 
     var msg2 = nowHour + ":" + nowMin + ":" + nowSec;
 
-    var locale = localStorage.getItem('Locale')
+    var locale = localStorage.getItem('Locale');
 
     switch (locale) {
         case '0':
@@ -111,4 +111,4 @@ function showClock() {
     $("#YMDD").html(msg1);
     $("#HMS").html(msg2);
 }
-setInterval('showClock()', 1000);
+setInterval(showClock, 1000);
