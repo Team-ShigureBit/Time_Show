@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width" />
-  <title>time</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>time</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>時刻(JST)</h1>
 
-<a onclick="setJa()">Ja</a>/<a onclick="setEn()">En</a>
+<main>
+    <h1>時刻(JST)</h1>
 
-<p id="YMDD">Now Loading...</p>
-<p id="HMS"></p>
+    <a onclick="setJa()">Ja</a>
+    /
+    <a onclick="setEn()">En</a>
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+    <a onclick="WebStorageTest()">test</a>
+
+    <a onclick="sdelete()">sd</a>
+
+    <p id="YMDD">Now Loading...</p>
+    <p id="HMS"></p>
+</main>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="script.js"></script>
+    <script src="webstorage.js"></script>
 </body>
 </html>
